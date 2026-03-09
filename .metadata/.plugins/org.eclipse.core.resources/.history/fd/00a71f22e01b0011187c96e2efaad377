@@ -1,0 +1,25 @@
+package br.com.alura;
+
+import java.util.List;
+
+public class Principal {
+	public static void main(String[] args) {
+		
+        //A lista gerada pelo List.of() é IMUTÁVEL.
+		//Garante que a lista não será alterada acidentalmente por outras partes do código.
+		List<String> funcionarios = List.of("Ana", "Bruno", "Carlos", "Amanda");
+		
+		//List<String> funcionariosLetraA = funcionarios.stream()
+        //            .filter(f -> f.startsWith("A"))
+		
+		List<String> funcionariosLetraA = funcionarios.stream()
+				.filter(f -> f.startsWith("A"))
+				.toList();
+		
+
+		System.out.println(funcionarios);
+		System.out.println(funcionariosLetraA);
+
+		
+	}
+}

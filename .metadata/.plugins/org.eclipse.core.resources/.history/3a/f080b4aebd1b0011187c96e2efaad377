@@ -1,0 +1,29 @@
+package br.com.alura;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Principal {
+	public static void main(String[] args) {
+		// List<String> funcionarios = new ArrayList<>();
+		List<String> funcionarios = new ArrayList<>();
+
+		funcionarios.add("João");
+		funcionarios.add("Maria");
+		funcionarios.add("João Marcos");
+
+		// (Retorna a quantidade de itens)
+		System.out.println(funcionarios.size());
+
+		System.out.println(funcionarios);
+
+		funcionarios.add("Lucas"); // (Adiciona)
+
+		// (Recupera pelo índice)
+		System.out.println(funcionarios.get(0));
+
+		funcionarios.remove("João"); // (Remove o item)
+		System.out.println(funcionarios);
+
+	}
+}

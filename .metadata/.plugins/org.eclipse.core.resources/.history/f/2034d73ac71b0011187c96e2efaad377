@@ -1,0 +1,42 @@
+package br.com.alura;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class Principal {
+	public static void main(String[] args) {
+		// List<String> funcionarios = new ArrayList<>();
+		List<String> funcionarios = new ArrayList<>();
+
+		funcionarios.add("João");
+		funcionarios.add("Maria");
+		funcionarios.add("João Marcos");
+
+		// (Retorna a quantidade de itens)
+		System.out.println(funcionarios.size());
+
+		System.out.println(funcionarios);
+
+		funcionarios.add("Lucas"); // (Adiciona)
+
+		// (Recupera pelo índice)
+		System.out.println(funcionarios.get(0));
+
+		funcionarios.remove("João"); // (Remove o item)
+		System.out.println(funcionarios);
+
+		//HashSet: É a implementação mais comum da interface Set
+		//HashSet não garante a ordem em que os elementos foram inseridos.
+		//Duplicados Não permite (ex: ["A", "B"])
+		//Não possui índice (é um conjunto)
+		//Ultra rápida para verificar se algo existe
+		Set<String> produto = new HashSet<>();
+		produto.add("coco gelado");
+		produto.add("Água");
+		
+		System.out.println(produto);
+		
+	}
+}
